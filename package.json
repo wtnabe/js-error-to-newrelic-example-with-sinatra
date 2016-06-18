@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "jquery2": "^2.0.3-a",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "postinstall": "browserify javascripts/application.js > public/bundled.js",
+    "build": "browserify javascripts/application.js > public/bundled.js",
+    "watch": "watchify javascripts/application.js -o public/bundled.js"
+  }
+}

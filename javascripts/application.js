@@ -1,14 +1,17 @@
-var $ = require('jquery2');
+var u = require('umbrellajs');
 
 window.onerror = function(message, source, lineno, colno, error) {
-  $.post('/onerror', 
+  u.ajax('/onerror',
          {
-           message: message,
-           source:  source,
-           lineno:  lineno,
-           colno:   colno,
-           error:   error,
-           uri:     location.href
+           method: 'POST',
+           body:   {
+             message: message,
+             source:  source,
+             lineno:  lineno,
+             colno:   colno,
+             error:   error,
+             uri:     location.href
+           }
          }
         );
 };

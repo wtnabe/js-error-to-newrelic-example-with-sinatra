@@ -7,7 +7,10 @@ window.onerror = function(message, source, lineno, colno, error) {
            source:  source,
            lineno:  lineno,
            colno:   colno,
-           error:   error
+           error:   error,
+           uri:     location.href
          }
         );
 };
+
+syntax;

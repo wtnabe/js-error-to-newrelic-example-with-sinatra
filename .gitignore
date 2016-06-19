@@ -6,3 +6,4 @@
 /vendor
 /node_modules
 /public/bundled.js
+log/

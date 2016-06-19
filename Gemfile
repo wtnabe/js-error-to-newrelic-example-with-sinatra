@@ -6,3 +6,4 @@ gem "sinatra-contrib"
 
 gem "newrelic_rpm"
 
+gem "puma", group: :production

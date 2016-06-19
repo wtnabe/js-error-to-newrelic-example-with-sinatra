@@ -1,7 +1,9 @@
 {
-  "devDependencies": {
+  "dependencies": {
     "browserify": "^13.0.1",
-    "jquery2": "^2.0.3-a",
+    "jquery2": "^2.0.3-a"
+  },
+  "devDependencies": {
     "watchify": "^3.7.0"
   },
   "scripts": {
